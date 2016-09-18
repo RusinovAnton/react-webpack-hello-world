@@ -1,0 +1,53 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb-base/legacy"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "semi": 0,
+        "camelcase": 0,
+        "no-shadow": 0,
+        "func-names": 0,
+        "no-console": 0,
+        "vars-on-top": 0,
+        "comma-dangle": 0,
+        "padded-blocks": 0,
+        "no-multi-spaces": 0,
+        "max-len": ["error", 128],
+        "object-curly-spacing": 0,
+        "no-useless-constructor": 2,
+        "react/display-name": 0, // Prevent missing displayName in a React component definition
+        "react/jsx-no-undef": 2, // Disallow undeclared variables in JSX
+        "react/jsx-sort-props": 0, // Enforce props alphabetical sorting
+        "react/jsx-uses-react": 2, // Prevent React to be incorrectly marked as unused
+        "react/jsx-uses-vars": 2, // Prevent variables used in JSX to be incorrectly marked as unused
+        "react/no-did-mount-set-state": 2, // Prevent usage of setState in componentDidMount
+        "react/no-did-update-set-state": 2, // Prevent usage of setState in componentDidUpdate
+        "react/no-multi-comp": 1, // Prevent multiple component definition per file
+        "react/no-unknown-property": 2, // Prevent usage of unknown DOM property
+        "react/react-in-jsx-scope": 2, // Prevent missing React when using JSX
+        "react/self-closing-comp": 2, // Prevent extra closing tags for components without children
+        "react/jsx-wrap-multilines": 2, // Prevent missing parentheses around multilines JSX
+        "react/jsx-boolean-value": 2,
+        "react/jsx-no-duplicate-props": 2,
+        "react/jsx-no-bind": 2,
+        "react/sort-comp": 0,
+        "react/prop-types": [2, { "ignore": [
+            "children",
+            "className",
+            "style",
+            "params",
+            "dispatch"
+        ]
+        }]
+    }
+}
