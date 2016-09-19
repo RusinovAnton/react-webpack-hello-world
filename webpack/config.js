@@ -12,7 +12,7 @@ module.exports = {
   cache: !PROD,
   context: path.resolve('./src'),
   externals: {
-    Config: './app.config.js'
+    'Config': JSON.stringify(require('../app.config.json'))
   },
   entry: entry,
   output: {

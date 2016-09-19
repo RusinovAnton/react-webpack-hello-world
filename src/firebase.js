@@ -1,3 +1,4 @@
+/* global Config */
 import firebase from 'firebase'
 
 
