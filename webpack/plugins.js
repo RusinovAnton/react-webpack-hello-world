@@ -1,11 +1,11 @@
-var PROD = process.env.NODE_ENV === 'production';
+var PROD = process.env.NODE_ENV === 'production'
 
-var path = require('path');
-var webpack = require('webpack');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var ManifestPlugin = require('webpack-manifest-plugin');
-var CopyPlugin = require('copy-webpack-plugin');
+var path = require('path')
+var webpack = require('webpack')
+var CleanWebpackPlugin = require('clean-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var ManifestPlugin = require('webpack-manifest-plugin')
+var CopyPlugin = require('copy-webpack-plugin')
 
 
 module.exports = {
@@ -53,5 +53,5 @@ module.exports = {
     'process.env.NODE_ENV': '"production"'
   })
 
-};
+}
 

@@ -1,11 +1,11 @@
-var PROD = process.env.NODE_ENV === 'production';
+var PROD = process.env.NODE_ENV === 'production'
 
 
-var path = require('path');
-var precss = require('precss');
-var autoprefixer = require('autoprefixer');
-var entry = require('./entry');
-var plugins = require('./plugins');
+var path = require('path')
+var precss = require('precss')
+var autoprefixer = require('autoprefixer')
+var entry = require('./entry')
+var plugins = require('./plugins')
 
 
 module.exports = {
@@ -35,7 +35,7 @@ module.exports = {
     return [
       precss,
       autoprefixer
-    ];
+    ]
   },
   eslint: {
     configFile: './.eslintrc'
@@ -44,5 +44,5 @@ module.exports = {
     plugins.clean,
     plugins.commonsChunk,
   ]
-};
+}
 

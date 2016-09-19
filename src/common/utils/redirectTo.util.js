@@ -6,11 +6,11 @@
 const redirectTo = (url) => {
 
   if (url) {
-    location.href = url;
-    return true;
+    location.href = url
+    return true
   }
-  return false;
+  return false
 
-};
+}
 
-export default redirectTo;
+export default redirectTo

@@ -1,15 +1,12 @@
 {
-  "private": true,
-  "scripts": {
-    "build-app": "webpack --progress",
-    "watch-app": "webpack --watch  --progress",
-    "dev-app": "webpack-dev-server --inline --hot --progress"
-  },
+  "name": "react-redux-immutable-webpack-hello-world",
+  "version": "1.0.0",
+  "description": "My personal boilerplate for react-redux with webpack",
+  "main": "./src/index.js",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.2.1",
     "babel-eslint": "^6.1.2",
-    "babel-loader": "^6.2.0",
     "babel-plugin-transform-react-constant-elements": "^6.9.1",
     "babel-plugin-transform-react-inline-elements": "^6.8.0",
     "babel-preset-es2015": "^6.13.2",
@@ -18,9 +15,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "clean-webpack-plugin": "^0.1.10",
     "copy-webpack-plugin": "^3.0.1",
-    "css-loader": "^0.23.1",
     "csslint": "^0.10.0",
-    "csslint-loader": "^1.0.0",
     "eslint": "^3.3.0",
     "eslint-config-airbnb": "^10.0.1",
     "eslint-config-airbnb-base": "^5.0.2",
@@ -29,36 +24,58 @@
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
     "node-libs-browser": "^0.5.3",
     "node-sass": "^3.8.0",
-    "postcss-loader": "^0.10.1",
     "precss": "^1.4.0",
     "prefetch-context-webpack-plugin": "^0.1.0",
-    "sass-loader": "^4.0.0",
+    "csslint-loader": "^1.0.0",
+    "postcss-loader": "^0.10.1",
     "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
+    "babel-loader": "^6.2.0",
+    "file-loader": "^0.9.0",
+    "sass-loader": "^4.0.0",
+    "css-loader": "^0.23.1",
     "url-loader": "^0.5.7",
     "webpack-strip-block": "^0.1.0",
-     "loader-utils": "^0.2.15"
+    "loader-utils": "^0.2.15"
   },
   "dependencies": {
     "lodash": "^4.15.0",
     "normalizr": "^2.2.1",
-    "pnotify": "^3.0.0",
     "react": "^15.3.0",
-    "react-bootstrap": "^0.30.3",
-    "react-chartjs-2": "^1.2.4",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.7.0",
+    "react-bootstrap": "^0.30.3",
     "react-router-active-component": "^4.0.0",
+    "seamless-immutable": "^6.1.1",
     "react-router-redux": "^4.0.5",
-    "react-select2-wrapper": "^1.0.1-beta1",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
-    "seamless-immutable": "^6.1.1",
-    "select2": "^4.0.3",
     "webpack": "^1.13.1"
-  }
+  },
+  "scripts": {
+    "test": "jest",
+    "build-app": "webpack --progress",
+    "watch-app": "webpack --watch  --progress",
+    "start": "webpack-dev-server --inline --hot --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RusinovAnton/react-webpack-hello-world.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "immutable",
+    "seamless-immutable"
+  ],
+  "author": "Rusinov Anton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RusinovAnton/react-webpack-hello-world/issues"
+  },
+  "homepage": "https://github.com/RusinovAnton/react-webpack-hello-world#readme"
 }

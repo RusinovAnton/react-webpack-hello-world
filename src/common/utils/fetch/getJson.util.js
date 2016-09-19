@@ -1,4 +1,5 @@
-import 'whatwg-fetch';
+import 'whatwg-fetch'
+
 
 export default (url) => {
 
@@ -13,17 +14,17 @@ export default (url) => {
     .then(response => {
 
       if (response.status >= 200 && response.status < 300) {
-        return Promise.resolve(response);
+        return Promise.resolve(response)
       }
 
       return Promise.reject({
         status: response.status,
         text: response.statusText
-      });
+      })
 
     })
     .then(response => {
-      return response.json();
-    });
+      return response.json()
+    })
 
-};
+}
