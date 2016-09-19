@@ -34,6 +34,7 @@ if (!PROD) {
  */
 if (PROD) {
 
+  config.module.loaders = config.module.loaders.concat([{ test: /\.js$/, loader: "webpack-strip-block" }])
   config.plugins = config.plugins.concat([
     plugins.defineProd,
     plugins.uglify,
