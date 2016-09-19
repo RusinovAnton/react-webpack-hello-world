@@ -1,11 +1,11 @@
-var PROD = process.env.NODE_ENV === 'production';
+var PROD = process.env.NODE_ENV === 'production'
 
 
-var webpack = require('webpack');
-var config = require('./webpack/config');
-var plugins = require('./webpack/plugins');
+var webpack = require('webpack')
+var config = require('./webpack/config')
+var plugins = require('./webpack/plugins')
 
-console.log('Webpack started in ' + (process.env.NODE_ENV || 'dev') + ' mode.');
+console.log('Webpack started in ' + (process.env.NODE_ENV || 'dev') + ' mode.')
 
 
 /**
@@ -13,7 +13,7 @@ console.log('Webpack started in ' + (process.env.NODE_ENV || 'dev') + ' mode.');
  */
 if (!PROD) {
 
-  config.devtool = 'source-map';
+  config.devtool = 'source-map'
   config.module.preLoaders =[
     {
       test: /\.js$/,
