@@ -11,6 +11,9 @@ var plugins = require('./plugins')
 module.exports = {
   cache: !PROD,
   context: path.resolve('./src'),
+  externals: {
+    Config: './app.config.js'
+  },
   entry: entry,
   output: {
     path: path.resolve('dist'),
